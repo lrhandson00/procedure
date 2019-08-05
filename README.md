@@ -15,7 +15,9 @@
     - $ git clone https://github.com/lrhandson00/circleci-demo-aws-ecs-ecr
     - $ cd circleci-demo-aws-ecs-ecr/terraform_setup
   - AWS 変数の実際の値で ~/terraform_setup/terraform.tfvars を更新
-    - $ vi terraform.tfvars 
+    - $ vi terraform.tfvars
+      - AWS_DEFAULT_REGION : ap-northeast-1
+      - AWS_RESOURCE_NAME_PREFIX : 任意でよいがここではユーザー名にしておく
   - AWSリソースを作成
     - $ terraform init
       - エラーが発生するので解消する
