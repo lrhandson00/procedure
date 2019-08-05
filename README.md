@@ -26,12 +26,13 @@
       - 完了したらロードバランサーのDNS名でアクセスしてみる
   - GitHubの自分のリポジトリにpush
     - $ cd ..
-    - $ vi .gitignore
-      - terraform_setup/
-      - ※認証情報を含み、またpush時にサイズ制限に引っかかるため除外する
-    - $ git config --global user.email "メールアドレス"
     - $ git config --global user.name "ユーザー名"
-    - $ git remote -v
+    - $ git config --global user.email "メールアドレス"
+    - $ vi .gitignore
+      - /terraform_setup/
+        - 認証情報を含み、またpush時にサイズ制限に引っかかるため除外する
+    - $ git rm --cached -r terraform_setup/
+      - すでにリポジトリに登録されているため管理対象から外す
     - $ git remote add ユーザー名 https://github.com/ユーザー名/circleci-demo-aws-ecs-ecr.git
     - $ git remote -v
     - $ git add .
