@@ -38,6 +38,9 @@
     - $ git add .
     - $ git commit -m "update .gitignore"
     - $ git push ユーザー名 orbs
+  - CircleCIのSign Up
+    - https://circleci.com/signup/
+      - Sign Up with GitHub
   - CircleCIでAdd Project(環境変数を登録する前にいったんJobを実行し、FAILEDにする)
   - CircleCI 環境変数を設定する
     - AWS_ACCESS_KEY_ID
