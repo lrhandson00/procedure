@@ -53,3 +53,7 @@
   - Rerun workflow
   - main.goをfix後、pushしてCircleCIのJobを実行させ、SUCCESSにする
     - 完了したらロードバランサーのDNS名でアクセスしてみる
+
+## 後片付け
+- $ terraform destory
+  - CloudFormation, VPC, ロードバランサー, ESC, ESRあたりが削除されたことを画面から確認する
